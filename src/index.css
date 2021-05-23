@@ -1,0 +1,410 @@
+
+  body {
+    background-image: url('/src/images/bg2.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    font-family: 'Lato', sans-serif;
+  }
+.content{
+  display: flex;
+}
+
+
+/* Styling for the charts */
+
+.charts{
+  width: 25%;
+}
+
+
+
+
+.personal{
+  width: 35%;
+  margin-left: 2%;
+  background-color: #474b4f65;
+  padding: 10px;
+  padding-bottom: 5vh;
+  border-radius: .25em;
+ 
+}
+#month{
+  float: right;
+  display: inline;
+  font-size: 2vw;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h3 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+h4{
+  text-align: center;
+  color: white;
+}
+.head{
+  color: white;
+  text-align: center;
+  width: auto;
+}
+
+
+
+#add{
+  text-align: left;
+}
+.totals-container{
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: .25em;
+}
+.totals-container > div{
+  flex: 1;
+  text-align: center;
+}
+
+.total{
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2vw;
+}
+.total-income{
+  color: #008000;
+}
+.total-expenses{
+  color: #ff0000;
+}
+.total-net{
+  color: rgb(255, 255, 255);
+}
+.details{
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 4%;
+  box-sizing: border-box;
+  float: left;
+}
+.incomes{
+  width: 49.9%;
+  float: left;
+  text-align: left;
+  
+  margin-bottom: 15%;
+}
+
+.expenses{
+  width: 49.9%;
+  float: right;
+  text-align: right;
+  margin-bottom: 15%;
+}
+.income-detail{
+  color: green;
+}
+.expense-detail{
+  color: red;
+  
+}
+
+ul{
+  list-style-type: none;
+}
+li{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-right: 5%;
+  line-height: 3;
+}
+.add{
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+}
+.add-total{
+  width: 50%;
+  float:right;
+}
+.add-type{
+  width: 50%;
+  float: left;
+}
+
+
+form > button{
+  float: right;
+  margin-top: 3%;
+  margin-left: 2%;
+
+    background-color:#61892f;
+    border-radius:.25em;
+    border:1px solid #61892f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:1vw;
+    font-weight:bold;
+    padding:6px 12px;
+    text-decoration:none;
+    width: 5em;
+    height: 4vh;
+  
+
+}
+form > button:hover{
+  background-color:#86c232;
+  transition: .25s all ease;
+
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #61892f;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  margin-top: 3%;
+  margin-right: 2%;
+  position: relative;
+  float: right;
+  display: flex;
+  width: 10em;
+  height: 4vh;
+  line-height: 2.5;
+  background: #77b55a00;
+  overflow: hidden;
+  border-radius: .25em;
+ 
+}
+select {
+  font-size: 1vw;
+  flex: 1;
+  padding: 0 .5em;
+  color: rgb(255, 255, 255);
+  font-weight:bold;
+  cursor: pointer;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  height: 4vh;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #6b6e70;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #86c232;;
+}
+
+.dlt{
+  background-color: rgba(245, 237, 237, 0.158);
+  color: white;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+  font-size: 1vw;
+  vertical-align:middle;
+  margin-top: 3%;
+  height: 50%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@media (max-width: 1600px){
+.totals-container{
+  font-size: 1vw;
+  }
+
+li{
+    line-height: 2;
+
+}
+
+input{
+  font-size: 1vw;
+}
+
+
+
+}
+
+@media (max-width: 1200px){
+
+.personal{
+  width: 80%;
+  margin: auto;
+}
+.charts{
+  margin: auto;
+  width: 50%;
+}
+.content{
+  flex-wrap: wrap;
+}
+#month{
+  float: right;
+  font-size: 2.5vw;
+}
+li{
+  font-size: 2.5vw;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: auto;
+  margin-left: -15px;
+  line-height: 2;
+}
+.dlt{
+  background-color: rgba(245, 237, 237, 0.158);
+  color: white;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7vw;
+  vertical-align:middle;
+  margin-top: 4%;
+  height: 50%;
+}
+.add > button, select{
+  font-size: 2vw;
+}
+.btn{
+  font-size: 2vw;
+  line-height: 1;
+}
+input{
+  font-size: 1.7vw;
+}
+h1{
+  font-size: 25px;
+}
+
+h3,h4{
+  font-size: 2vw;
+}
+.total{
+  font-size: 3.2vw;
+}
+
+.select{
+  line-height: 2;
+}
+
+}
+@media (max-height:700px){
+
+  .personal{
+    padding-bottom: 15%;
+  }
+  .btn,.select{
+    height: 30px;
+  }
+  .select::after {
+    height: 30px;
+  }
+}
+
+@media (max-width:480px){
+.add{
+  font-size: 12px;
+}
+.charts{
+  margin: auto;
+  width: 90%;
+}
+input{
+  font-size: 8px;
+}
+h1{
+  font-size: 20px;
+}
+h3{
+  font-size: 15px;
+}
+h4{
+  font-size: 10px;
+}
+.total{
+  font-size: 20px;
+}
+.total-net{
+  line-height: 1;
+}
+li{
+  font-size: 3vw;
+  margin: 1%;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: -25px;
+  line-height: 2;
+
+}
+.btn,select{
+  font-size: 15px;
+}
+.select{
+  float: left;
+}
+.btn{
+  float: right;
+}
+#income-head{
+  font-size: 10px;
+}
+#expense-head{
+  font-size: 11px;
+}
+.personal{
+  width: 90%;
+  padding-bottom: 25%;
+}
+.dlt{
+  font-size: 10px;
+  margin-top: 2%;
+}
+
+}
