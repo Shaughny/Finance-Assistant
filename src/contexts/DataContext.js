@@ -49,7 +49,7 @@ const addExpense = (type,total) =>{
 
         try {
 
-            Axios.post('https://pers-finance.herokuapp.com//trans/insert',
+            Axios.post('https://pers-finance.herokuapp.com/trans/insert',
             {type:type,
             total:total,
             isincome:true
