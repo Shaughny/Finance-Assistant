@@ -35,7 +35,6 @@ export const AddDetail = () => {
     return (
         <div className="add">
             <br></br>
-            <h4 id="add">Add Income or Expense</h4>
             <hr></hr>
             <br></br>
             <form onSubmit={handleSubmit}>
@@ -46,7 +45,7 @@ export const AddDetail = () => {
                 </div>
                 <div className="add-total" >
                     <label htmlFor="total">Total: </label>
-                     <input type="number"  onChange={(e)=>setTotal(e.target.value)} placeholder="Enter Total"/>
+                     <input type="number"  required onChange={(e)=>setTotal(e.target.value)} placeholder="Enter Total"/>
                 </div>
 
 

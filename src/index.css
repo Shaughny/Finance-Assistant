@@ -30,11 +30,7 @@
   border-radius: .25em;
  
 }
-#month{
-  float: right;
-  display: inline;
-  font-size: 2vw;
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -58,7 +54,7 @@ h4{
 
 
 #add{
-  text-align: left;
+  text-align: center;
 }
 .totals-container{
   background-color: rgba(255, 255, 255, 0);
@@ -224,7 +220,7 @@ select {
 }
 /* Transition */
 .select:hover::after {
-  color: #86c232;;
+  color: #86c232;
 }
 
 .dlt{
@@ -249,6 +245,90 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+
+.portfolio{
+  width: 35%;
+  position: absolute;
+  right: 1.5%;
+  text-align: center;
+  color: white;
+  background-color: #474b4f65;
+  border-radius: .25em;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 8px;
+  height: auto;
+}
+.stocks-headers{
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  line-height: 3;
+}
+.stock-item{
+  justify-content:space-between;
+  font-size: 1vw;
+  margin-right: 0;
+
+}
+
+.stock-price{
+  padding-left: 9%;
+}
+hr{clear:both}
+.stock-item >span{
+  padding-left: 3%;
+  margin-right: 3%;
+  padding-right: 0%;
+  
+}
+.stock-item > button{
+  margin-left: -1%;
+}
+
+.stocks-headers > span{
+  font-size: 1.1vw;
+  text-decoration: underline;
+  margin-left: 5%;
+  margin-right: -12%;
+}
+.stocks-headers{
+ 
+  width: 85%;
+  color: #86c232;
+}
+h5{
+  font-size: 1vw;
+  margin-right: 1%;
+}
+.empty-graph{
+  text-align: center;
+  width: 25%;
+  color: #86c232;
+}
+#stock-totals{
+  color:  #86c232;
+  font-weight:400;
+  font-size: 1.1vw;
+}
+.dlt-stock{
+  background-color: rgba(245, 237, 237, 0.158);
+  color: white;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+  font-size: 1vw;
+  vertical-align:middle;
+  line-height: 1.1;
+  margin-top: 2%;
+  left: -5.5%;
+  position: absolute;
+  height: 50%;
+}
+
 @media (max-width: 1600px){
 .totals-container{
   font-size: 1vw;

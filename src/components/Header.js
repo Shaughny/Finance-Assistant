@@ -5,8 +5,7 @@ export const Header = () =>{
     return(
         <div className="head">
 
-        <h1>Financial Assistant</h1>
-      
+        <h1>Personal Finance Tracker</h1>
         </div>
         
     )

@@ -42,12 +42,12 @@ export const PieChart = () => {
         chartData = {
             fontColor:'white',
             font:{size: 20},
-            labels:["Expenses","Remaining"],
+            labels:["Spent","Remaining"],
             datasets:[{
-                borderColor:'#474b4f',
+                borderColor:'white',
                 label:'transactions',
                 data:[totalExpense,(totalIncome-totalExpense)],
-                backgroundColor:['#ff0000','white'],
+                backgroundColor:['#ff0000','#61892f'],
                 
             }]
         }
@@ -55,12 +55,12 @@ export const PieChart = () => {
             chartData = {
                 fontColor:'white',
                 font:{size: 20},
-                labels:["Expenses","Remaining"],
+                labels:["Spent","Remaining"],
                 datasets:[{
                     borderColor:'#474b4f',
                     label:'transactions',
                     data:[totalExpense,(0)],
-                    backgroundColor:['#ff0000','white'],
+                    backgroundColor:['#ff0000','#61892f'],
                     
                 }]
             }
@@ -84,7 +84,9 @@ export const PieChart = () => {
     }    
     else{
         return(
-            <div></div>
+            <div class="empty-graph">
+                <h5>Add an Income/Expense for a Graph</h5>
+            </div>
         )
     }
     
