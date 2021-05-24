@@ -11,6 +11,7 @@ import Porfolio from './components/Portfolio';
 import AddStock from './components/AddStock';
 import 'react-toastify/dist/ReactToastify.css';
 import {toast,ToastContainer} from 'react-toastify';
+import {Helmet} from 'react-helmet';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
     <StockContextProvider>
       <ToastContainer/>
     <div className="App">
-      
+      <Helmet>
+        <title>Personal Finances Tracker</title>
+        <meta name="description" content="Track all of your personal finances!" />
+      </Helmet>
        <Header/>
        <div className="content">
         <div className="personal">
