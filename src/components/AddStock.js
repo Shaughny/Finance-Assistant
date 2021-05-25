@@ -39,7 +39,7 @@ export const AddStock = () => {
                 <input type="text"  value={symbol} required onChange={(e)=>setSymbol(e.target.value)} placeholder="Enter Stock Symbol"></input>
             </div>
             <div className="add-total" >
-                <label htmlFor="total"># Shares: </label>
+                <label htmlFor="total">Shares: </label>
                  <input type="number"  required onChange={(e)=>setShares(e.target.value)} placeholder="Enter # of Shares Owned"/>
             </div>
             <button  type="submit" className="btn">Add</button>

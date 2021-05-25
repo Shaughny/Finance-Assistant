@@ -279,6 +279,8 @@ input[type=number] {
   padding-left: 9%;
 }
 hr{clear:both}
+
+
 .stock-item >span{
   padding-left: 3%;
   margin-right: 3%;
@@ -343,11 +345,49 @@ input{
   font-size: 1vw;
 }
 
+.dlt-stock{
+  height: 60%;
+  margin-top: 1%;
+}
 
 
 }
 
 @media (max-width: 1200px){
+  .stocks-headers{
+ 
+    width: 87%;
+    color: #86c232;
+  }
+
+  .stocks-headers > span{
+    font-size: 2vw;
+    text-decoration: underline;
+    margin-left: 7%;
+    margin-right: -12%;
+  }
+
+  .stock-item{
+    margin: auto;
+    width: 95%;
+    justify-content:space-between;
+    font-size: 1.8vw;
+    margin-right: 0;
+  
+  }
+  h5{
+    font-size: 1.9vw;
+  }
+  #stock-totals{
+    font-size: 1.8vw;
+  }
+  .stock-item >span{
+   
+    margin-right: 1%;
+    padding-right: 0%;
+    
+  }
+
 
 .personal{
   width: 80%;
@@ -355,7 +395,22 @@ input{
 }
 .charts{
   margin: auto;
-  width: 50%;
+  width: 70%;
+  margin-bottom: 2%;
+}
+.portfolio{
+    width: 80%;
+    margin: auto;
+    position:relative;
+    text-align: center;
+    color: white;
+    background-color: #474b4f65;
+    border-radius: .25em;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 8px;
+    height: auto;
+  
 }
 .content{
   flex-wrap: wrap;
@@ -426,12 +481,55 @@ h3,h4{
 }
 
 @media (max-width:480px){
+
+
+  .dlt-stock{
+   left: -25px;
+   font-size: 10px;
+   margin-top: 1.5%;
+  }
+  .stocks-headers{
+ 
+    width: 87%;
+    color: #86c232;
+  }
+
+  .stocks-headers > span{
+    font-size: 13px;
+    text-decoration: underline;
+    margin-left: 7%;
+    margin-right: -12%;
+  }
+
+  .stock-item{
+    margin: auto;
+    width: 100%;
+    justify-content:space-between;
+    font-size: 12px;
+    margin-right: 0;
+  
+  }
+  h5{
+    font-size: 12px;
+  }
+  #stock-totals{
+    font-size: 12px;
+  }
+  .stock-item >span{
+   
+    margin-right: 0%;
+    padding-right: 0%;
+    
+  }
+
+
 .add{
   font-size: 12px;
 }
 .charts{
   margin: auto;
-  width: 90%;
+  width: 80%;
+  margin-bottom: 2%;
 }
 input{
   font-size: 8px;
@@ -440,7 +538,8 @@ h1{
   font-size: 20px;
 }
 h3{
-  font-size: 15px;
+  font-size: 12px;
+
 }
 h4{
   font-size: 10px;
@@ -449,7 +548,7 @@ h4{
   font-size: 20px;
 }
 .total-net{
-  line-height: 1;
+  line-height: 1.4;
 }
 li{
   font-size: 3vw;
@@ -474,9 +573,11 @@ li{
 }
 #income-head{
   font-size: 10px;
+  line-height: 1.8;
 }
 #expense-head{
-  font-size: 11px;
+  font-size: 10px;
+  line-height: 1.8;
 }
 .personal{
   width: 90%;
