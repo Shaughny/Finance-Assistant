@@ -1,5 +1,9 @@
 # Finance-Assistant
-> Used: MySQL, React.js, Express.js & Node.js
+### Used: 
+-MySQL 
+-React.js
+-Express.js  
+-Node.js
 
 Keep track of financial information, such as monthly expenses and current investments with a visual representation in the form of a doughnut graph for extra clarity. 
 
