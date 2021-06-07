@@ -38,7 +38,6 @@ export const StockContextProvider = ({children})=>{
             try {
            
                 axios.get('https://pers-finance.herokuapp.com/stocks/get').then((response) =>{
-                    console.log(response.data)
                 setInvestments(response.data)
                 })
             
