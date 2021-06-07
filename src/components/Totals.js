@@ -6,7 +6,6 @@ export const Totals = () => {
     const {data} = useContext(DataContext);
     let expenses = [];
     let incomes = [];
-    console.log(data)
     data.forEach(e => {
 
         if(e.isincome){
@@ -17,10 +16,17 @@ export const Totals = () => {
         }
 
     })
+    // Object.keys(data).forEach((e)=>{
+    //     if(e.isincome){
+    //         incomes.push(e)
+    //     }
+    //     else{
+    //         expenses.push(e)
+    //     }
+    // })
 
 
-    data.filter((e)=>!e.isincome);
-    data.filter((e)=>e.isincome);
+   
     let totalExpense = 0;
     let totalIncome = 0;
     incomes.forEach(e => totalIncome = parseInt(totalIncome)  + parseInt(e.total) );

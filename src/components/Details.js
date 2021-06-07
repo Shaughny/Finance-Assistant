@@ -17,7 +17,8 @@ export const Details = () => {
 
      const expenses = data.filter((e)=>!e.isincome);
      const incomes = data.filter((e)=>e.isincome);
-    
+//    const expenses =  Object.keys(data).filter((e)=>!e.isincome);
+//    const incomes = Object.keys(data).filter((e)=>e.isincome);
 
     return (
         <div className="details">

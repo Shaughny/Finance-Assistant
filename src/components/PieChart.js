@@ -9,6 +9,8 @@ export const PieChart = () => {
     const {data} = useContext(DataContext);
     const expenses = data.filter((e)=>!e.isincome);
     const incomes = data.filter((e)=>e.isincome);
+//     const expenses =  Object.keys(data).filter((e)=>!e.isincome);
+//    const incomes = Object.keys(data).filter((e)=>e.isincome);
     let totalExpense = 0;
     let totalIncome = 0;
     incomes.forEach(e => totalIncome = parseInt(totalIncome)  + parseInt(e.total) );
@@ -84,7 +86,7 @@ export const PieChart = () => {
     }    
     else{
         return(
-            <div class="empty-graph">
+            <div className="empty-graph">
                 <h5>Add an Income/Expense for a Graph</h5>
             </div>
         )
