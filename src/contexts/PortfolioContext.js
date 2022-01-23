@@ -56,7 +56,7 @@ export const StockContextProvider = ({children})=>{
          axios.delete(`https://mofinance.herokuapp.com/stocks/delete/${symbol}`).then(()=>{
                     fetchStockData();
                  })
-        const temp = investments.filter(e => e.symbol!== symbol);
+        const temp = investments.filter(e => e.symbol !== symbol);
             setInvestments(temp);
     }
 

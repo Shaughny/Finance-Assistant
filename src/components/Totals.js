@@ -6,6 +6,7 @@ export const Totals = () => {
     const {data} = useContext(DataContext);
     let expenses = [];
     let incomes = [];
+    console.log(data);
     data.forEach(e => {
 
         if(e.isincome){
