@@ -37,7 +37,7 @@ export const StockContextProvider = ({children})=>{
 
             try {
            
-                axios.get('https://pers-finance.herokuapp.com/stocks/get').then((response) =>{
+                axios.get('https://mofinance.herokuapp.com/stocks/get').then((response) =>{
                 setInvestments(response.data)
                 })
             
@@ -53,7 +53,7 @@ export const StockContextProvider = ({children})=>{
 
     const deleteStock = (symbol) =>{
          
-         axios.delete(`https://pers-finance.herokuapp.com/stocks/delete/${symbol}`).then(()=>{
+         axios.delete(`https://mofinance.herokuapp.com/stocks/delete/${symbol}`).then(()=>{
                     fetchStockData();
                  })
         const temp = investments.filter(e => e.symbol!== symbol);
@@ -72,7 +72,7 @@ export const StockContextProvider = ({children})=>{
 
         try {
 
-            axios.post('https://pers-finance.herokuapp.com/stocks/insert',
+            axios.post('https://mofinance.herokuapp.com/stocks/insert',
             {symbol:result.data['Global Quote']['01. symbol'],
             price:result.data['Global Quote']['05. price'],
             shares:shares

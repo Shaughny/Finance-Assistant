@@ -12,7 +12,7 @@ export const DataContextProvider = ({children}) => {
     const getData =() => {
         try {
            
-                Axios.get('https://pers-finance.herokuapp.com/trans/get').then((response) =>{
+                Axios.get('https://mofinance.herokuapp.com/trans/get').then((response) =>{
                 setData(response.data)
                 })
             
@@ -29,7 +29,7 @@ export const DataContextProvider = ({children}) => {
 const addExpense = (type,total) =>{
         try {
 
-            Axios.post('https://pers-finance.herokuapp.com/trans/insert',
+            Axios.post('https://mofinance.herokuapp.com/trans/insert',
             {type:type,
             total:total,
             isincome:false
@@ -49,7 +49,7 @@ const addExpense = (type,total) =>{
 
         try {
 
-            Axios.post('https://pers-finance.herokuapp.com/trans/insert',
+            Axios.post('https://mofinance.herokuapp.com/trans/insert',
             {type:type,
             total:total,
             isincome:true
@@ -67,7 +67,7 @@ const addExpense = (type,total) =>{
        
         if(trans.trans_id == null){
 
-            Axios.delete(`https://pers-finance.herokuapp.com/trans/delete/${trans.type}`).then(()=>{
+            Axios.delete(`https://mofinance.herokuapp.com/trans/delete/${trans.type}`).then(()=>{
                 getData();
             })
             
@@ -77,7 +77,7 @@ const addExpense = (type,total) =>{
          else{
                 const trans_id = trans.trans_id;
                         
-                Axios.delete(`https://pers-finance.herokuapp.com/trans/delete/${trans_id}`).then(()=>{
+                Axios.delete(`https://mofinance.herokuapp.com/trans/delete/${trans_id}`).then(()=>{
                     getData();
                  })
          const temp = data.filter(e => e.trans_id !== trans_id);
