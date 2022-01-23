@@ -7,24 +7,24 @@ export const Totals = () => {
     let expenses = [];
     let incomes = [];
     console.log(data);
-    // data.forEach(e => {
+    data.forEach(e => {
 
-    //     if(e.isincome){
-    //         incomes.push(e)
-    //     }
-    //     else{
-    //         expenses.push(e)
-    //     }
-
-    // })
-    Object.keys(data).forEach((e)=>{
         if(e.isincome){
             incomes.push(e)
         }
         else{
             expenses.push(e)
         }
+
     })
+    // Object.keys(data).forEach((e)=>{
+    //     if(e.isincome){
+    //         incomes.push(e)
+    //     }
+    //     else{
+    //         expenses.push(e)
+    //     }
+    // })
 
 
    
