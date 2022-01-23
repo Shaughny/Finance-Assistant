@@ -10,8 +10,8 @@ export const Portfolio = () => {
     const {investments} = useContext(StockContext);
     let totals = 0;
    
-    investments.forEach((e)=>( totals = (e.price*e.shares)+ totals));
-
+    // investments.forEach((e)=>( totals = (e.price*e.shares)+ totals));
+    Object.keys(investments).forEach((e)=>( totals = (e.price*e.shares)+ totals));
     return (
         <div>
             <h2>Investments</h2>
