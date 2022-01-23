@@ -22,8 +22,8 @@ export const Portfolio = () => {
            
             <div className="stocks">
              <ul>
-                {investments.map(stock=>(<StockQuote key={stock.symbol} stock={stock} price={parseFloat(stock.price).toFixed(2)}/>))}
-                {/* {Object.keys(investments).map((stock=>(<StockQuote key={stock.symbol} stock={stock} price={parseFloat(stock.price).toFixed(2)}/>)))} */}
+                {/* {investments.map(stock=>(<StockQuote key={stock.symbol} stock={stock} price={parseFloat(stock.price).toFixed(2)}/>))} */}
+                {Object.keys(investments).map((stock=>(<StockQuote key={stock.symbol} stock={stock} price={parseFloat(stock.price).toFixed(2)}/>)))}
             </ul> 
             </div>
 
