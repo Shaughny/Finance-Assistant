@@ -13,7 +13,8 @@ export const DataContextProvider = ({children}) => {
         try {
            
                 Axios.get('https://mofinance.herokuapp.com/trans/get').then((response) =>{
-                setData(response.data)
+                 console.log(response.data);   
+                setData(response.data);
                 })
             
         } catch (error) {
